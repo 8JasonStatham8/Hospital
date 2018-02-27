@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>系统管理员管理黑名单</title>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+	<load href="__PUBLIC__/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/css/Common/show.css" />
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/adminheader.html" />
+
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<ul class="nav nav-stacked nav-pills">
+							<li>
+								 <a href="__APP__/System/Hospital/lst.html">医院管理</a>
+							</li>
+							<li class="active">
+								 <a href="#">黑名单管理</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8 column">
+						<form class="form-inline" role="form" action="__CONTROLLER__/black" method="get">
+						  	<div class="form-group">
+						    	<label class="sr-only" for="user_id">身份证号</label>
+						    	<input type="text" class="form-control" id="name" name="user_id" placeholder="身份证号">
+						  	</div>
+						  	<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>身份证号</th>
+									<th>姓名</th>
+									<th>到期时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+					            <volist name="blackList" id="black" empty="$empty">
+					            	<tr>
+										<td>{$black['user_id']}</td>
+										<td>{$black['user_name']}</td>
+										<td>{$black['stop_date']}</td>
+										<td><a href="__CONTROLLER__/delblack/user_id/{$black['user_id']}" class="btn btn-danger" onclick="return confirm('请确认是否删除该患者?')";>删除</a></td>
+									</tr>
+					            </volist>
+					            <div>{$page}</div>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	</footer>
+</body>
+</html> 

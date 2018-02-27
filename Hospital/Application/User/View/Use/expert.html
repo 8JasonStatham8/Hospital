@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>科室页</title>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__js/bootstrap.min.js"></script>
+    <load href="__PUBLIC__/css/bootstrap.min.css" />
+    <load href="__PUBLIC__/css/Common/show.css" />
+    
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/userheader.html" />
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+						<div class="jumbotron">
+							<div>
+								<h2>{$department_name}</h2></div>
+								<p>
+									{$department_describe}
+								</p>
+							</div>
+						</div>
+						<br><br>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>专家工号</th>
+									<th>详情</th>
+									<th>{$date[1]}</th>
+									<th>{$date[2]}</th>
+									<th>{$date[3]}</th>
+									<th>{$date[4]}</th>
+									<th>{$date[5]}</th>
+									<th>{$date[6]}</th>
+									<th>{$date[7]}</th>
+								</tr>
+							</thead>
+							<tbody>
+								<volist name="expertList" id="expert">
+									<tr>
+										<td>{$expert['16']}</td>
+										<td>上午</td>
+										<td>{$expert['1']}</td>
+										<td>{$expert['2']}</td>
+										<td>{$expert['3']}</td>
+										<td>{$expert['4']}</td>
+										<td>{$expert['5']}</td>
+										<td>{$expert['6']}</td>
+										<td>{$expert['7']}</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>下午</td>
+										<td>{$expert['8']}</td>
+										<td>{$expert['9']}</td>
+										<td>{$expert['10']}</td>
+										<td>{$expert['11']}</td>
+										<td>{$expert['12']}</td>
+										<td>{$expert['13']}</td>
+										<td>{$expert['14']}</td>
+									</tr>
+								</volist>
+							</tbody>					
+						</table>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+	
+</body>
+</html>

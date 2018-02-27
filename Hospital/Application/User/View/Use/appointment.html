@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>预约页</title>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__js/bootstrap.min.js"></script>
+    <load href="__PUBLIC__/css/bootstrap.min.css" />
+    <load href="__PUBLIC__/css/Common/show.css" />
+    <style>
+    	.sort-name{
+    		color: red;
+    		font-size: 30px;
+    	}
+    	.aa{
+    		display: inline;
+    	}
+    	.information{
+    		height: 200px;
+    		background-color: #EEEEEE;
+    		border-radius:10px;
+    	}
+    	img{
+    		margin-top: 20px;
+    		margin-left: 20px;
+    		border-radius:10px;
+    	}
+    	.con{
+    		float: left;
+    		width: 20%;
+    	}
+    </style>
+    
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/userheader.html" />
+	<div class="container" style="width: 50%">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				
+				<form role="form" action="__CONTROLLER__/appointment" method="post">
+						<div class="information">
+							<div style="width:25%; float: left;">
+								<img src="{$expert_img}" alt="医生图片">
+							</div>
+							<div style="width:75%; float: right;">
+								<div class="aa"><h2>{$expert_name}</h2></div>
+								<div class="aa"><h4>{$hos_name}</h4></div>
+								<div class="aa"><h4>{$department_name}</h4></div>
+								<p>
+									{$expert_skill}
+								</p>
+							</div>
+						</div>
+						<div class="form-group">
+							 <label for="date">您选择的日期</label><input type="text" readonly="readonly" class="form-control" id="date" name="appointment_date" value="{$appointment_date}" />
+						</div>
+						<div style="display: none;">
+							<input type="text" name="hos_name" value="{$hos_name}">
+							<input type="text" name="hos_code" value="{$hos_code}">
+							<input type="text" name="expert_code" value="{$expert_code}">
+							<input type="text" name="department_name" value="{$department_name}">
+							<input type="text" name="info" value="{$info}">
+							<input type="text" name="expert_name" value="{$expert_name}">
+						</div>
+						<div class="form-group">
+							<label for="time">请选择前去就诊时间</label>
+					        <select class="form-control" name="time">
+					            <volist name="timeList" id="time">
+					               	<option value="{$time}">{$time}</option>
+					            </volist>
+		                	</select>
+					        </div>
+					<button type="submit" class="btn btn-default btn-primary">提交预约</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+	
+</body>
+</html>

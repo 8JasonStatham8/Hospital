@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>医院管理员添加专家</title>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+	<load href="__PUBLIC__/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/css/Common/show.css" />
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/adminheader.html" />
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<ul class="nav nav-stacked nav-pills">
+							<li>
+								 <a href="__APP__/Hospital/Apply/lst.html">申请停诊管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Arrange/lst.html">排班管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Department/lst.html">科室管理</a>
+							</li>
+							<li class="active">
+								 <a href="#">专家管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Change/lst.html">医院信息管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Data/lst">数据报表</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8 column">
+						<form role="form" action="__CONTROLLER__/add" method="post">
+							<div class="form-group">
+								 <label for="expert_name">专家姓名</label><input type="text" class="form-control" id="expert_name" name="expert_name"  />
+							</div>
+							<div class="form-group">
+								<select class="form-control" name="department_name">
+									<volist name="departmentList" id="department">
+										<option value="{$department[department_name]}">
+											{$department[department_name]}
+										</option>
+									</volist>
+								</select>
+
+							</div>
+								<button type="submit" class="btn btn-lg btn-primary btn-default">提交</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</body>
+</html>

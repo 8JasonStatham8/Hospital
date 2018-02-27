@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>专家在诊</title>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+	<load href="__PUBLIC__/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/css/Common/show.css" />
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/adminheader.html" />
+
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<ul class="nav nav-stacked nav-pills">
+							<li class="active">
+								 <a href="#">挂号信息</a>
+							</li>
+							<li>
+								 <a href="__APP__/Expert/Apply/add.html">申请停诊</a>
+							</li>
+							<li>
+								 <a href="__APP__/Expert/Expert/update.html">个人信息</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8 column">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>患者身份证</th>
+									<th>姓名</th>
+									<th>时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+					            <volist name="appointmentList" id="appointment" empty="$empty">
+					            	<tr>
+										<td>{$appointment['user_id']}</td>
+										<td>{$appointment['user_name']}</td>
+										<td>{$appointment['time']}</td>
+										<td><a href="__CONTROLLER__/agree/user_id/{$appointment['user_id']}" class="btn btn-success" onclick="return confirm('请确认是否就诊?')";>已就诊</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="__CONTROLLER__/reject/user_id/{$appointment['user_id']}" class="btn btn-danger" onclick="return confirm('请确认是否爽约?')";>已爽约</a></td>
+									</tr>
+					            </volist>
+					            
+							</tbody>
+						</table>
+						<div class="page-list">{$page}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	</footer>
+</body>
+</html> 

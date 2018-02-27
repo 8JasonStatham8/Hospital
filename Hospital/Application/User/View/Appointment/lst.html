@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>个人预约信息</title>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+	<load href="__PUBLIC__/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/css/Common/show.css" />
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/userheader.html" />
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<ul class="nav nav-stacked nav-pills">
+							<li class="active">
+								 <a href="#">预约记录</a>
+							</li>
+							<li>
+								 <a href="__APP__/User/User/update.html">个人信息</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8 column">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>医院名</th>
+									<th>科室名</th>
+									<th>专家名</th>
+									<th>预约日期</th>
+									<th>预约时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+					            <volist name="appointmentList" id="appointment" empty="$empty">
+					            	<tr>
+										<td>{$appointment['hos_name']}</td>
+										<td>{$appointment['department_name']}</td>
+										<td>{$appointment['expert_name']}</td>
+										<td>{$appointment['appointment_date']}</td>
+										<td>{$appointment['time']}</td>
+										<td><a href="__CONTROLLER__/concel/hos_code/{$appointment['hos_code']}/department_name/{$appointment['department_name']}/expert_code/{$appointment['expert_code']}/appointment_date/{$appointment['appointment_date']}" class="btn btn-danger" onclick="return confirm('请确认是否取消此预约?')";>取消预约</a></td>
+										<!--expert_name/{$appointment['expert_name']}/appointment_date/{$appointment['appointment_date']}-->
+									</tr>
+					            </volist>
+					            
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	</footer>
+</body>
+</html> 

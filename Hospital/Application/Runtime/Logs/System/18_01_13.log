@@ -1,0 +1,132 @@
+[ 2018-01-13T19:06:41+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 10 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 12 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 30 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 33 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 39 行.
+SQL: SELECT * FROM `hospital` LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2018-01-13T19:06:45+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 10 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 12 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 30 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 33 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 39 行.
+SQL: SELECT * FROM `hospital` LIMIT 3,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-01-13T19:06:46+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 10 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 12 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 30 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 33 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 39 行.
+SQL: SELECT * FROM `hospital` LIMIT 6,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-01-13T19:06:48+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 10 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 12 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 30 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 33 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 39 行.
+SQL: SELECT * FROM `hospital` LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+

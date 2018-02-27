@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>医院管理员数据报表</title>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+	<load href="__PUBLIC__/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/css/Common/show.css" />
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/adminheader.html" />
+
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<ul class="nav nav-stacked nav-pills">
+							<li>
+								 <a href="__APP__/Hospital/Apply/lst">申请停诊管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Arrange/lst">排班管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Department/lst">科室管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Expert/lst">专家管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Change/lst">医院信息管理</a>
+							</li>
+							<li class="active">
+								 <a href="__APP__/Hospital/Data/lst">数据报表</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8 column">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>专家工号</th>
+									<th>上午</th>
+									<th>所剩时间点</th>
+									<th>下午</th>
+									<th>所剩时间点</th>
+								</tr>
+							</thead>
+							<tbody>
+					            <volist name="dataList" id="data" empty="$empty">
+					            	<tr>
+										<td>{$data['expert_code']}</td>
+										<td>{$data['upnum']}</td>
+										<td>
+											<select name="up" id="up" class="form-control">
+												<volist name="data.up" id="uplst">
+													<option value="{$uplst}">{$uplst}</option>
+												</volist>
+											</select>
+										</td>
+										<td>{$data['downnum']}</td>
+										<td>
+											<select name="down" id="down" class="form-control">
+												<volist name="data.down" id="downlst">
+													<option value="{$downlst}">{$downlst}</option>
+												</volist>
+											</select>
+										</td>
+									</tr>
+					            </volist>
+					            
+							</tbody>
+						</table>
+						<div class="page-list">{$page}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	</footer>
+</body>
+</html> 

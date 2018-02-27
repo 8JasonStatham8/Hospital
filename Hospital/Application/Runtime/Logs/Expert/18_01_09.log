@@ -1,0 +1,23 @@
+[ 2018-01-09T21:49:02+08:00 ] ::1 /Hospital/index.php/Expert/Appointment/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: sa D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Expert\a19981044fb3de7636cc537139b8bcfb.php 第 46 行.
+NOTIC: [8] Undefined variable: empty D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Expert\a19981044fb3de7636cc537139b8bcfb.php 第 51 行.
+NOTIC: [8] Undefined variable: page D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Expert\a19981044fb3de7636cc537139b8bcfb.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+

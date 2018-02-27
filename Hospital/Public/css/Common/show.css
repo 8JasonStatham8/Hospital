@@ -1,0 +1,34 @@
+.header{
+	display: inline;
+	width: 100%;
+	background-color: red;
+}
+.logo{
+	float: left;
+	background-color: red;
+}
+.info{
+	float: left;
+	background-color: blue;
+}
+.container{
+
+		}
+.left{
+	float: left;
+	width: 30%;
+}
+.right{
+	float: right;
+	width: 70%;
+}
+.left a{
+	display: block;
+}
+.search-item{
+	float: left;
+}
+.list-container{
+	float: none;
+	display: inline;
+}

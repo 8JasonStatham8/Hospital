@@ -1,0 +1,261 @@
+[ 2018-01-27T16:11:59+08:00 ] ::1 /Hospital/index.php/Hospital/Apply/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `apply` [ RunTime:0.0106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apply` WHERE (  (hos_code="13" ) and ( stop_date > curdate() ) and ( state="没有值" ) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `apply` WHERE ( hos_code="13" and stop_date > curdate() and state="没有值"  ) LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: empty D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Hospital\1a4380ab53cbe01ec8af64e0d2bd4cca.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-01-27T16:12:01+08:00 ] ::1 /Hospital/index.php/Hospital/Arrange/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: SHOW COLUMNS FROM `arrange` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `arrange` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `arrange` WHERE ( hos_code="13" ) LIMIT 0,3   [ RunTime:0.0008s ]
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-01-27T16:12:17+08:00 ] ::1 /Hospital/index.php/Hospital/Arrange/changeup/expert_code/10000/info/tuesday2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `arrange` [ RunTime:0.0033s ]
+SQL: UPDATE `arrange` SET `tuesday2`='√' WHERE ( expert_code="10000" ) [ RunTime:0.1775s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2018-01-27T16:12:18+08:00 ] ::1 /Hospital/index.php/Hospital/Arrange/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `arrange` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `arrange` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `arrange` WHERE ( hos_code="13" ) LIMIT 0,3   [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 46 行.
+NOTIC: [8] Array to string conversion D:\XAMPP\xampp\htdocs\Hospital\Application\Hospital\Controller\ArrangeController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-01-27T16:12:23+08:00 ] ::1 /Hospital/index.php/Hospital/Arrange/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2018-01-27T16:12:26+08:00 ] ::1 /Hospital/index.php/Hospital/Department/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `department` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `department` WHERE ( hos_code="13" ) LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-01-27T16:12:30+08:00 ] ::1 /Hospital/index.php/Hospital/Expert/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `expert` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `expert` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `expert` WHERE ( hos_code="13" ) LIMIT 0,3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-01-27T16:12:33+08:00 ] ::1 /Hospital/index.php/Hospital/Change/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `hospital` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2018-01-27T16:12:36+08:00 ] ::1 /Hospital/index.php/Hospital/Data/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `appointment` [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `arrange` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `arrange` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `arrange` WHERE ( hos_code="13" )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `appointment` WHERE ( expert_code="10000" and appointment_date=curdate() and info="saturday" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `appointment` WHERE ( expert_code="10000" and appointment_date=curdate() and info="saturday" )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `appointment` WHERE ( expert_code="10000" and appointment_date=curdate() and info="saturday2" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `appointment` WHERE ( expert_code="10000" and appointment_date=curdate() and info="saturday2" )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: downnum D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Hospital\cad0d7e405fd199ad54f7b246a433919.php 第 69 行.
+NOTIC: [8] Undefined index: down D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Hospital\cad0d7e405fd199ad54f7b246a433919.php 第 72 行.
+NOTIC: [8] Undefined variable: page D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\Hospital\cad0d7e405fd199ad54f7b246a433919.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2018-01-27T16:12:48+08:00 ] ::1 /Hospital/index.php/Hospital/Change/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `hospital` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+

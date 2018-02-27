@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__js/bootstrap.min.js"></script>
+    <load href="__PUBLIC__/css/bootstrap.min.css" />
+    <load href="__PUBLIC__/css/Common/show.css" />
+    <style>
+    	p{
+       		overflow:hidden;
+			text-overflow:ellipsis;
+			-o-text-overflow:ellipsis;
+			width:100%;
+			height: 60PX;
+		}
+		h4,h1{
+			display: inline;
+		}
+    </style>
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/userheader.html" />
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+						<form class="form-inline" role="form" style="background-color: #F9F9F9;height: 40px;text-align:center;" action="__CONTROLLER__/index" method="post">
+						  	<div class="form-group">
+						    	<label class="sr-only" for="name">名称</label>
+						    	<input type="text" class="form-control" id="name" name="hos_name" placeholder="医院名称">
+						  	</div>
+						  	<div class="form-group">
+				                <select name="hos_area" class="form-control">
+					                <option value="">请选择行政区</option>
+					                <option value="市南区">市南区</option>
+					                <option value="莱西市">莱西市</option>
+					                <option value="市北区">市北区</option>
+					                <option value="黄岛区">黄岛区</option>
+					                <option value="崂山区">崂山区</option>
+					                <option value="李沧区">李沧区</option>
+					                <option value="城阳区">城阳区</option>
+					                <option value="胶州市">胶州市</option>
+					                <option value="即墨市">即墨市</option>
+					                <option value="平度市">平度市</option>
+					            </select>
+					        </div>
+					        <div class="form-group">
+					        	<select name="hos_rank" class="form-control">
+				                	<option value="">请选择医院等级</option>
+				                	<option value="三级甲等">三级甲等</option>
+				                	<option value="三级乙等">三级乙等</option>
+				                	<option value="二级甲等">二级甲等</option>
+	               	 				<option value="二级乙等">二级乙等</option>
+		                		</select>
+					        </div>
+						  	<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+						<br><br><br><br><br><br><br>
+						<table class="table">
+							<tbody>
+					            <volist name="hospitalList" id="hospital" empty="$empty">
+					            	<tr onclick="location.href='__CONTROLLER__/department/hos_name/{$hospital[\'hos_name\']}';">
+									<td style="width: 170px;height: 140px;" ><img src="{$hospital['hos_pic']}" alt="医院图片"></td>
+									<td>
+										<h1><a href="#">{$hospital['hos_name']}</a></h1>&nbsp;&nbsp;&nbsp;<h4 style="background-color: #87CEEB; border-radius: 3px;">{$hospital['hos_rank']}</h4>&nbsp;&nbsp;&nbsp;<h4 style="background-color: #00FF7F">{$hospital['hos_area']}</h4>
+										<p>{$hospital['hos_introduce']}</p>
+									</td>
+								</tr>
+									
+					            </volist>
+							</tbody>
+						</table>
+						<div class="page-list">{$page}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+	
+</body>
+</html>

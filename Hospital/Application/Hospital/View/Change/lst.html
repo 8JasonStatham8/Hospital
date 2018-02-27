@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>医院管理员管理医院</title>
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+	<load href="__PUBLIC__/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/css/Common/show.css" />
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/adminheader.html" />
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<ul class="nav nav-stacked nav-pills">
+							<li>
+								 <a href="__APP__/Hospital/Apply/lst.html">申请停诊管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Arrange/lst.html">排班管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Department/lst.html">科室管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Expert/lst.html">专家管理</a>
+							</li>
+							<li class="active">
+								 <a href="#">医院信息管理</a>
+							</li>
+							<li>
+								 <a href="__APP__/Hospital/Data/lst">数据报表</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8 column">
+						<!-- enctype="multipart/form-data"的作用是用于表单提交图片 -->
+						<form role="form" action="__CONTROLLER__/change" enctype="multipart/form-data" method="post">
+							<div class="form-group">
+								 <label for="hos_name">医院名称</label><input readonly="readonly" type="text" class="form-control" id="hos_name" value="{$data['hos_name']}" />
+							</div>
+							<div class="form-group">
+								 <label for="hos_code">医院代码</label><input readonly="readonly" type="text" class="form-control" id="hos_code" value="{$data['hos_code']}" />
+							</div><div class="form-group">
+								 <label for="hos_password">医院管理员密码</label><input type="text" class="form-control" name="hos_password" id="hos_password" value="{$data['hos_password']}" />
+							</div>
+							<div class="form-group">
+								 <label for="hos_pic">上传医院图片</label><input type="file" name="hos_pic" id="hos_pic" class="form-control" value="{$data['hos_pic']}" />
+							</div>
+							<div class="form-group">
+								 <label for="hos_contact">医院电话</label><input type="text" class="form-control" name="hos_contact" id="hos_contact" value="{$data['hos_contact']}" />
+							</div>
+							<div class="form-group">
+								 <label for="hos_address">医院地址</label><input type="text" class="form-control" name="hos_address" id="hos_address" value="{$data['hos_address']}" />
+							</div>
+							<div class="form-group">
+								 <label for="hos_introduce">医院简介</label><textarea class="form-control" id="hos_introduce" name="hos_introduce" value="{$data['hos_introduce']}" >{$data['hos_introduce']}</textarea> 
+							</div>
+								<button type="submit" class="btn btn-lg btn-primary btn-default">提交</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</body>
+</html>

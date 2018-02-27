@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>管理者登陆</title>
+ 	<load href="__PUBLIC__/css/bootstrap.min.css" />
+ 	<load href="__PUBLIC__/css/Login/login.css" />
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">  
+	  <div class="row myCenter">  
+	    <div class="col-xs-6 col-md-4 col-center-block">  
+	      <form class="form-signin" action="__CONTROLLER__/adminlogin" method="post">  
+	        <h2 class="form-signin-heading">请登录</h2>
+	        <br>
+	        <label for="username" class="sr-only">用户名</label>
+	        <input type="text" id="username" name="username" class="form-control" placeholder="用户名" required autofocus>  
+	        <br>  
+	        <label for="inputPassword" class="sr-only">密码</label>  
+	        <br>  
+	        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>  
+	        <br>  
+	        <br>  
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>  
+	      </form>  
+	    </div>  
+	  </div>  
+	</div>  
+
+</body>
+</html> 

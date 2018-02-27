@@ -1,0 +1,252 @@
+[ 2018-01-27T16:13:02+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 10 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 12 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 30 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 33 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 39 行.
+SQL: SELECT * FROM `hospital` LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2018-01-27T16:13:11+08:00 ] ::1 /Hospital/index.php/System/Hospital/delhos/hos_code/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `expert` [ RunTime:0.0178s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `expert` WHERE ( hos_code="13" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-01-27T16:13:16+08:00 ] ::1 /Hospital/index.php/System/Black/black.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `black` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: user_id D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\BlackController.class.php 第 8 行.
+SQL: SELECT * FROM `black`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: page D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\9dadeffd4a88919ccd2011e470e11f82.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2018-01-27T16:13:21+08:00 ] ::1 /Hospital/index.php/System/Black/delblack/user_id/370902199603253311
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `black` [ RunTime:0.0069s ]
+SQL: DELETE FROM `black` WHERE `user_id` = '370902199603253311' [ RunTime:0.1644s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-01-27T16:13:22+08:00 ] ::1 /Hospital/index.php/System/Black/black.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `black` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: user_id D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\BlackController.class.php 第 8 行.
+SQL: SELECT * FROM `black`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: empty D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\9dadeffd4a88919ccd2011e470e11f82.php 第 55 行.
+NOTIC: [8] Undefined variable: page D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\9dadeffd4a88919ccd2011e470e11f82.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2018-01-27T16:13:24+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 10 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 12 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 15 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 18 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: hos_name D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 30 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 33 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_rank D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 36 行.
+NOTIC: [8] Undefined index: hos_area D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\HospitalController.class.php 第 39 行.
+SQL: SELECT * FROM `hospital` LIMIT 0,3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-01-27T16:13:34+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst?hos_name=&hos_area=%E5%B4%82%E5%B1%B1%E5%8C%BA&hos_rank=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` WHERE ( hos_area ="崂山区" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hospital` WHERE ( hos_area ="崂山区" ) LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined variable: empty D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\0f64576673df4bd871a1373bdc309f99.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-01-27T16:13:39+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst?hos_name=&hos_area=%E5%B8%82%E5%8D%97%E5%8C%BA&hos_rank=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` WHERE ( hos_area ="市南区" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hospital` WHERE ( hos_area ="市南区" ) LIMIT 0,3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: empty D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\0f64576673df4bd871a1373bdc309f99.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-01-27T16:13:44+08:00 ] ::1 /Hospital/index.php/System/Hospital/lst?hos_name=&hos_area=%E8%8E%B1%E8%A5%BF%E5%B8%82&hos_rank=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `hospital` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hospital` WHERE ( hos_area ="莱西市" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hospital` WHERE ( hos_area ="莱西市" ) LIMIT 0,3   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-01-27T16:13:47+08:00 ] ::1 /Hospital/index.php/System/Black/black.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `black` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: user_id D:\XAMPP\xampp\htdocs\Hospital\Application\System\Controller\BlackController.class.php 第 8 行.
+SQL: SELECT * FROM `black`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: empty D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\9dadeffd4a88919ccd2011e470e11f82.php 第 55 行.
+NOTIC: [8] Undefined variable: page D:\XAMPP\xampp\htdocs\Hospital\Application\Runtime\Cache\System\9dadeffd4a88919ccd2011e470e11f82.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+

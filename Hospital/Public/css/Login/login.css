@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+}  
+.col-center-block {  
+	float: none;  
+	display: block;  
+	margin-left: auto;  
+	margin-right: auto;  
+}
+header{
+	text-align: center;
+	background-color: #337AB7; 
+	margin-top: -20px;
+}

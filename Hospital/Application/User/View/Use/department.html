@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>科室页</title>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__js/bootstrap.min.js"></script>
+    <load href="__PUBLIC__/css/bootstrap.min.css" />
+    <load href="__PUBLIC__/css/Common/show.css" />
+    <style>
+    	.sort-name{
+    		color: red;
+    		font-size: 30px;
+    	}
+    	.aa{
+    		display: inline;
+    	}
+    	.information{
+    		height: 200px;
+    		background-color: #EEEEEE;
+    		border-radius:10px;
+    	}
+    	img{
+    		margin-top: 20px;
+    		margin-left: 20px;
+    		border-radius:10px;
+    	}
+    	.con{
+    		float: left;
+    		width: 20%;
+    	}
+    </style>
+
+</head>
+<body>
+<include file="./Application/Login/View/Header/userheader.html" />
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+
+						<div class="information">
+							<div style="width:25%; float: left;">
+								<img src="{$hospitalList['hos_pic']}" alt="医院管理员太懒了">
+							</div>
+							<div style="width:75%; float: right;">
+								<div class="aa"><h2>{$hospitalList['hos_name']}</h2></div>
+								<div class="aa"><h4>{$hospitalList['hos_area']}</h4></div>
+								<div class="aa"><h4>{$hospitalList['hos_rank']}</h4></div>
+								<p style="">
+									{$hospitalList['hos_introduce']}
+								</p>
+							</div>
+						</div>
+						
+						<br><br>
+						<div class="con">
+						<table class="table table-striped">
+							<thead><tr><th>内科</th></tr></thead>	
+							<tbody>
+								<volist name="neikeList" id="neike">
+								<tr onclick="location.href='__CONTROLLER__/expert/hos_code/{$hospitalList[\'hos_code\']}/department_name/{$neike[\'department_name\']}';">
+									<td>{$neike['department_name']}</td>
+								</tr>
+								</volist>
+							</tbody>
+						</table>
+						</div>
+						<div class="con">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>
+										外科
+									</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<volist name="waikeList" id="waike">
+								<tr onclick="location.href='__CONTROLLER__/expert/hos_code/{$hospitalList[\'hos_code\']}/department_name/{$waike[\'department_name\']}';">
+									<td>{$waike['department_name']}</td>
+								</tr>
+								</volist>
+							</tbody>
+						</table>
+						</div>
+						<div class="con">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>
+										急诊科
+									</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<volist name="jizhenkeList" id="jizhenke">
+								<tr onclick="location.href='__CONTROLLER__/expert/hos_code/{$hospitalList[\'hos_code\']}/department_name/{$jizhenke[\'department_name\']}';">
+									<td>{$jizhenke['department_name']}</td>
+								</tr>
+								</volist>
+							</tbody>
+						</table>
+						</div>
+						<div class="con">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>
+										中医科
+									</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<volist name="zhongyikeList" id="zhongyike">
+								<tr onclick="location.href='__CONTROLLER__/expert/hos_code/{$hospitalList[\'hos_code\']}/department_name/{$zhongyike[\'department_name\']}';">
+									<td>{$zhongyike['department_name']}</td>
+								</tr>
+								</volist>
+							</tbody>
+						</table>
+						</div>
+						<div class="con">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>
+										妇产科
+									</th>
+								</tr>
+							</thead>	
+							<tbody>
+								<volist name="fuchankeList" id="fuchanke">
+								<tr onclick="location.href='__CONTROLLER__/expert/hos_code/{$hospitalList[\'hos_code\']}/department_name/{$fuchanke[\'department_name\']}';">
+									<td>{$fuchanke['department_name']}</td>
+								</tr>
+								</volist>
+							</tbody>
+						</table>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+	
+</body>
+</html>
