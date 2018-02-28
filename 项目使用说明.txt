@@ -1,0 +1,13 @@
+GitHub：https://github.com/8JasonStatham8/Hospital
+
+项目使用地址：
+
+项目用户首页http://123.207.153.217/Hospital/index.php/User/Use/index
+管理员登陆页面http://123.207.153.217/Hospital/index.php/Login/Login/adminlogin
+医院管理员登陆页面http://123.207.153.217/Hospital/index.php/Login/Login/hospitallogin
+医生登陆页面http://123.207.153.217/Hospital/index.php/Login/Login/expertlogin
+
+用户：自己填写即可
+管理员账号：admin 	密码：123
+医院管理员账号：13	密码：123456
+医生账号：10000		密码：123456
